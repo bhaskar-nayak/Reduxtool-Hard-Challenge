@@ -1,0 +1,80 @@
+.homeBackground{
+    background-color: black;
+    opacity: 100%;
+  }
+  .container{
+      padding: 0;
+      margin: 0;
+  }
+  .homeImage {
+      height: 700px;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      border-radius: 5px;
+      border: none;
+      position: relative;
+    }
+    
+    .image-container {
+      position: relative;
+      width: 100%;
+    }
+    
+    .overlay-text{
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      /* transform: translate(-50%, -50%); */
+      color: white;
+      font-size: 2rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      text-align: center;
+      padding: 10px;
+    }
+    .textRam{
+      color: orange;
+    }
+    .equal-images .col-6 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 50%; /* Adjust to maintain square ratio */
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .equal-images img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    @media (max-width: 768px) {
+      .homeImage, .equal-images img{
+        height: 100%;
+      }
+    
+      .overlay-text {
+        font-size: 0.75rem;
+      }
+    }
+    .customButton{
+      color:black;
+      opacity: 100%;
+      /* font-weight: 500; */
+      margin: 10px;
+	  padding: 10px;
+	  width: 14%;
+    }
+    @media (max-width: 768px) {
+        .customButton {
+          width: 40%; /* Adjust width for mobile view */
+          font-size: 1rem; /* Adjust font size if needed */
+          padding: 15px; /* Adjust padding if needed */
+          /* font-weight: 300; */
+        }
+      }

@@ -1,0 +1,81 @@
+.formBackground {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    min-height: 100vh; /* Ensures the background covers the entire viewport height */
+  }
+  
+  .container {
+    max-width: 100%;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .col-md-4 {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add some shadow for better visual appearance */
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="file"],
+  input[type="date"],
+  button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #333; /* Darker background for inputs */
+    color: white; /* White text */
+    border: none; /* No border */
+  }
+  
+  button {
+    background-color: #ff5733; /* Example custom color */
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #e64a19; /* Darker shade on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .col-md-4 {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    input[type="text"],
+    input[type="file"],
+    input[type="date"],
+    button {
+      padding: 10px;
+      font-size: 14px; /* Slightly smaller font size for mobile */
+    }
+  
+    h2 {
+      font-size: 1.5em;
+    }
+  }
